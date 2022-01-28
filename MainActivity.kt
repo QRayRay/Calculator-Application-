@@ -12,9 +12,9 @@ private const val STATE_OPERAND1_STORED = "Operand1_Stored"
 
 class MainActivity : AppCompatActivity() {
 
-    // Variables to hold the operands and type of calculation
+    // Review on save functions and save them into Gy, app
     
-    // Private var to set the buttons
+    
     private var operand1: Double? = null
     private var pendingOperation = "="
 
