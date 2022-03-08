@@ -212,3 +212,39 @@
 
 
 </LinearLayout>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:background="#c4c6ba"
+    >
+    <!-- No background color defined -->
+    <ImageButton
+        android:id="@+id/ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/transparent_image_button"
+        />
+    <!-- ImageButton background color orange by XML-->
+    <ImageButton
+        android:id="@+id/ib2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/transparent_image_button"
+        android:background="#ffa62b"
+        android:layout_below="@id/ib"
+        />
+    <!-- ImageButton background color blue programmatically -->
+    <ImageButton
+        android:id="@+id/ib3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/transparent_image_button"
+        android:layout_toRightOf="@id/ib"
+        />
+</RelativeLayout>
