@@ -8,6 +8,8 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
+    // The code needs t obe insteted to make sure that decimals can be used properly during the app run time.
+    
     private var tvInput: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
