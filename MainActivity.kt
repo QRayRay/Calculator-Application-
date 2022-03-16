@@ -10,8 +10,6 @@ class MainActivity : AppCompatActivity() {
 
     private var tvInput: TextView? = null
 
-    // dot is now treated as a dot instead of as a number. This due to the boolean value being false.
-
     var lastNumeric : Boolean = false
     var lastDot : Boolean = false
 
