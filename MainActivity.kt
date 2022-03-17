@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
 
     private var tvInput: TextView? = null
 
+    // dot is now treated as a dot instead of as a number. This due to the boolean value being false.
+
     var lastNumeric : Boolean = false
     var lastDot : Boolean = false
 
@@ -42,10 +44,26 @@ class MainActivity : AppCompatActivity() {
             lastDot = true
         }
     }
-// To adda prefix, select options after value and enter in ""
-    private fun isOperartorAdded(value : String) : Boolean {
+// since we are using let, we have to use it and if for operator
+fun onOperator(view: View){
+    tvInput?.text?.let {
+
+        if(lastNumeric && !isOperatorAdded(it.toString())){
+            tvInput?.append((view as Button).text)
+        }
+    }
+}
+
+
+// To add a prefix, select options after value and enter in ""
+    private fun isOperatorAdded(value : String) : Boolean {
         return if(value.startsWith("-")){
             false
+        }else {
+            value.contains("/")
+                    || value.contains("*")
+                    || value.contains("+")
+                    || value.contains("-")
         }
     }
 }
