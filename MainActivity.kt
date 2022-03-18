@@ -56,6 +56,7 @@ fun onOperator(view: View){
 
 
 // To add a prefix, select options after value and enter in ""
+// added operartors to limit the values of math calc
     private fun isOperatorAdded(value : String) : Boolean {
         return if(value.startsWith("-")){
             false
