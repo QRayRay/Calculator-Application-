@@ -10,8 +10,6 @@ class MainActivity : AppCompatActivity() {
 
     private var tvInput: TextView? = null
 
-    // dot is now treated as a dot instead of as a number. This due to the boolean value being false.
-
     var lastNumeric : Boolean = false
     var lastDot : Boolean = false
 
@@ -36,7 +34,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    // execute code to append now and Flags, it will help us know what is active.
     fun onDecimalPoint(view: View) {
         if(lastNumeric && !lastDot){
             tvInput?.append(".")
@@ -44,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             lastDot = true
         }
     }
-// since we are using let, we have to use it and if for operator
+
 fun onOperator(view: View){
     tvInput?.text?.let {
 
