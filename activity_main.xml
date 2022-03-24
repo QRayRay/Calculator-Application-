@@ -211,7 +211,7 @@
             android:text="@string/c"
             android:textColor="#4A148C"
             tools:ignore="ButtonStyle,UsingOnClickInXml,TextContrastCheck" />
-
+// makes sure the minus will not repaeat after a number is listed 
         <Button
             android:id="@+id/btnPlus"
             android:layout_width="0dp"
