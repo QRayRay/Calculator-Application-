@@ -91,5 +91,6 @@ fun onOperator(view: View){
                     || value.contains("*")
                     || value.contains("+")
                     || value.contains("-")
+                    || value.contains("=")
         }
     }
